@@ -12,6 +12,3 @@ def print_last_digit(number):
         number %= 10
         print("{}".format(number))
         return number
-
-
-print_last_digit(2023)
