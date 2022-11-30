@@ -2,7 +2,7 @@
 def islower(c):
     res = ""
     for lalpha in range(97, 123):
-        res = res + chr(lalpha)
+        res = res + ord(lalpha)
     if c in res:
         #print("{} is lower".format(c))
         return False
