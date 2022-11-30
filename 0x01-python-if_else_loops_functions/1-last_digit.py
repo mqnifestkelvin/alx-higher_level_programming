@@ -10,7 +10,7 @@ elif number % 10 == 0:
     print(f"Lats digit of {number} is {hold} and is 0")
 elif number > 0 and number % 10 < 6:
     hold = number % 10
-    print(f"Last digit of {number} is {hold} and is less than 6 and not zero")
+    print(f"Last digit of {number} is {hold} and is less than 6 and not 0")
 if number < 0 and number % -10 < 0:
     hold = number % -10
-    print(f"Lats digit of {number} is {hold} and is less than 6 and not zero")
+    print(f"Last digit of {number} is {hold} and is less than 6 and not 0")
