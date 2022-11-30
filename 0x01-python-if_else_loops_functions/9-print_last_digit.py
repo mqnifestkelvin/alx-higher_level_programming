@@ -6,9 +6,11 @@ def print_last_digit(number):
         return number
     if number < 0:
         number %= -10
-        print("{}".format(number), end="")
+        print("{}".format(number * -1), end="")
         return number * -1
     if number == 0:
         number %= 10
         print("{}".format(number), end="")
         return number
+
+print_last_digit(-876)
