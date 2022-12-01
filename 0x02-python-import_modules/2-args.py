@@ -11,5 +11,3 @@ if __name__ == "__main__":
         print(f"{count} arguments")
     for number in range(1, count + 1):
         print(f"{number}: {sys.argv[number]}")
-        
-
