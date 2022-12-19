@@ -6,6 +6,6 @@ def safe_function(fct, *arg):
     try:
         hold = fct(*arg)
         return hold
-    except:
+    except (TypeError, ValueError, ZeroDivisionError):
         print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
         return None
