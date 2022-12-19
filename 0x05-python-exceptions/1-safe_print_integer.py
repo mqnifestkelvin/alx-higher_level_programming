@@ -5,3 +5,4 @@ def safe_print_intget(value):
         return (True)
     except (TypeError, ValueError):
         return (False)
+    print("")
