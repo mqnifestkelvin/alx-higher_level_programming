@@ -4,8 +4,8 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             if my_list[i] <= 0 or my_list[i] >= 0:
                 clean = my_list[i]
-                hold += 1
                 print("{:d}".format(clean), end="")
+                hold += 1
             except (ValueError, TypeError):
                 continue
         print("")
