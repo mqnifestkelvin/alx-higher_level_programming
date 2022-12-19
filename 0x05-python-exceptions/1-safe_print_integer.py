@@ -4,6 +4,6 @@ def safe_print_intget(value):
         if value <= 0 or value >= 0:
             print("{:d}".format(value))
             return True
-        except TypeError:
+        except (TypeError, ValueError):
             print("{} is not an integer".format(value))
             return False
