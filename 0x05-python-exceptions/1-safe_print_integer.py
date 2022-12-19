@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 def safe_print_intget(value):
     try:
-        print("{:d}".format(value))
+        print("{:d}".format(value), end="\n")
         return (True)
     except (TypeError, ValueError):
         return (False)
-    print("")
