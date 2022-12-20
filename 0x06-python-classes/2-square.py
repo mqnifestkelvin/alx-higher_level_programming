@@ -10,10 +10,6 @@ class Square:
 
         Args:
             Size: The length of the sides of the square.
-
-        Raises:
-            TypeError: The arguement size must be an integer.
-            ValueError: The arguement passed must be greater than Zero (0)
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
