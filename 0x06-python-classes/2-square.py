@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 "A Square Module"
 
+
 class Square:
     """Construct of a square"""
     def __init__(self, size=0)
     """Constructor.
-        
+
         args:
             Size: The length of the sides of the square.
 
