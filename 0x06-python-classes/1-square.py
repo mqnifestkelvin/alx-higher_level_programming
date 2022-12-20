@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""A square module."""
+"""A Square Module."""
+
 
 class Square:
-    def __init__(self,  size=0):
+    """Representation of a square."""
+    def __init__(self,  size):
         """Constructor.
 
         args:
