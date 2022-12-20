@@ -2,6 +2,7 @@
 "A Square Module"
 
 class Square:
+    """Construct of a square"""
     def __init__(self, size=0)
     """Constructor.
         
