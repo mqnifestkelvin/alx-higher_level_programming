@@ -8,7 +8,7 @@ class Square:
         """Constructor.
         Args:
             size: The size of the square.
-            
+
         Raise:
             TypeError: The argument passed is not and integer.
             ValueError: The arguement passed is less than Zero (0).
