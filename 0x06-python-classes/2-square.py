@@ -6,7 +6,7 @@ class Square:
     """Construct of a square"""
 
     def __init__(self, size=0)
-    """Constructor.
+        """Constructor.
 
         args:
             Size: The length of the sides of the square.
@@ -14,7 +14,7 @@ class Square:
         Raises:
             TypeError: The arguement size must be an integer.
             ValueError: The arguement passed must be greater than Zero (0)
-    """
+        """
         if not isinstance(size, int):
         raise TypeError("size must be an integer")
         if size < 0:
