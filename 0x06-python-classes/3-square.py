@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""Define a Class Square"""
+
+
 class Square:
-    def __init__(self,size=0):
+    def __init__(self, size=0):
         """Constructor.
         Args:
             size: The size of the square.
