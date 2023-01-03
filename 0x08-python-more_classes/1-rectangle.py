@@ -4,13 +4,13 @@
 
 class Rectangle:
     """Represents a Rectangle"""
-    
+
     def __init__(self, width=0, height=0):
         """Initalize a Rectangle.
         Args:
             width: the integer value of the rectangles width.
             height: the integer value of the retangles height.
-            
+
         Raise:
             TypeError: if width is not an integer.
             ValueError: if width is less than zero (0)
@@ -19,15 +19,15 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         return self.__width
-    
+
     @property
     def height(self):
         return self.__height
-    
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -35,7 +35,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-    
+
     @height.setter
     def heigth(self, value):
         if not isinstance(value, int):
