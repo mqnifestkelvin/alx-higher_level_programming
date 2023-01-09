@@ -1,14 +1,7 @@
 #!/usr/bin/python3
-def is_same_class(obj, a_class):
-    """A function that check instance membership.
+'''Module for is_same_class method.'''
 
-    Args:
-        Obj: The object class to be checked.
-        a_class: The class to be chacked for membership.
-    Returns:
-        True if obj is part of a_class and  False if it isn't
-    """
-    if type(obj) == a_class:
-        return True
-    return False
-    
+
+def is_same_class(obj, a_class):
+    '''Determines if an object is exactly an instance of a class.'''
+    return type(obj) == a_class
