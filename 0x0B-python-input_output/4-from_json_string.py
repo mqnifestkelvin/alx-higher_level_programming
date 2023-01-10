@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import json
 """A Module that Returns an Object Represented by JSON string."""
+import json
 
 
 def from_json_string(my_str):
