@@ -10,7 +10,7 @@ def read_file(filename="", text=""):
         text: The text to be written to the file.
 
     Returns:
-        The number of characters added
+        The number of characters added.
     """
     with open(filename, mode="w", encoding="utf-8") as f:
         return f.write(text)
