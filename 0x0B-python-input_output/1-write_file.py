@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""A Module that Writes into a File."""
+
+
 def read_file(filename="", text=""):
     """Writes a string to a file usning utf encoding.
 
