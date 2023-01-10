@@ -5,6 +5,5 @@
 def save_to_json_file(my_obj, filename):
     """A function that returns an object representation
     by a JSON string."""
-    json_obj = json.dumps(my_obj)
-    with open(filename, mode="w", encoding="utf-8") as f
-    return f.write(json_obj)
+    with open(filename, mode="w") as f:
+        f.dump(my_obj, f)
