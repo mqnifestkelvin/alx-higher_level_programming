@@ -2,7 +2,7 @@
 """A Module tgat Defines a Pascals Triangle"""
 
 
-def pascals_triangle(n):
+def pascal_triangle(n):
     """A function that returns a list of the pascals triangle"""
     triangle = []
     for i in range(n):
