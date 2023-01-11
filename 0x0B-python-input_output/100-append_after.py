@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A Module that Inserts a Line of Text to A file"""
+"""A Module that Inserts a Line of Text to A file."""
 
 
 def append_after(filename="", search_string="", new_string=""):
