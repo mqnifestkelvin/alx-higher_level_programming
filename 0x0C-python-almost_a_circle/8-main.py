@@ -18,3 +18,8 @@ if __name__ == "__main__":
 
     r1.update(x=1, height=2, y=3, width=4)
     print(r1)
+
+    r1.update(0)
+    print(r1)
+
+   
