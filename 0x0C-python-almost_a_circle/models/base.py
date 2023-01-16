@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """A Module of Class Base."""
-
+import json
 
 class Base:
     """A class Base.
