@@ -17,9 +17,9 @@ def list_states(username, password, db_name):
     # Fetch all the rows from the query
     states = cur.fetchall()
 
-    # Print the states
+    # Print the states in the specified format
     for state in states:
-        print(state)
+        print("({}, '{}')".format(state[0], state[1]))
 
     # Close the cursor and the database connection
     cur.close()
