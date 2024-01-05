@@ -1,3 +1,3 @@
 #!/bin/bash
-# sends a req to a URL and displays size of response
-curl -so /dev/null -w '%{size_download}\n' $1
+# Get the byte size of the HTTP response header for a given URL.
+curl -s "$1" | wc -c
