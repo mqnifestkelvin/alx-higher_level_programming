@@ -1,3 +1,7 @@
 #!/bin/bash
-# Curls request and display bytes received
-curl -so /dev/null -w '%{size_download}\n' "$1"
+# 0-body_size.sh
+
+URL=$1
+response=$(curl -s "$URL")
+size=$(echo -n "$response" | wc -c)
+echo $size
