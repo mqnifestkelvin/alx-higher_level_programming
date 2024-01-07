@@ -1,8 +1,13 @@
 #!/usr/bin/python3
-""" Uses requests module to get header info"""
+"""
+Python script that takes in a URL and an email address,
+sends a POST request to the passed URL with the email,
+and displays the body of the response
+"""
 import requests
-from sys import argv
+import sys
+
 
 if __name__ == "__main__":
-    response = requests.post(argv[1], data={'email': argv[2]})
-    print(response.text)
+    r = requests.post(sys.argv[1], data={'email': sys.argv[2]})
+    print(r.text)
