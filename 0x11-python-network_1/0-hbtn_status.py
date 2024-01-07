@@ -1,8 +1,16 @@
 #!/usr/bin/python3
-""" Fetches basic request with urlib"""
-from urllib import request
+"""A script that
+- fetches https://alx-intranet.hbtn.io/status.
+- uses urlib package
+"""
 
-with request.urlopen("https://intranet.hbtn.io/status") as response:
-    r = response.read()
-    print("Body response:\n\t- type: {}\n\t- content: {}\n\t- utf8 content: {}"
-          .format(type(r), r, r.decode('utf-8')))
+
+if __name__ == '__main__':
+    import urllib.request
+
+    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as res:
+        content = res.read()
+        print("Body response:")
+        print("\t- type: {}".format(type(content)))
+        print("\t- content: {}".format(content))
+        print("\t- utf8 content: {}".format(content.decode('utf-8')))
