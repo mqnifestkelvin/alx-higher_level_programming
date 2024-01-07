@@ -1,13 +1,15 @@
 #!/usr/bin/python3
-""" Uses requests module. Prints error code"""
-import requests
-from sys import argv
+"""
+Python script that takes GitHub credentials
+and uses the GitHub API to display the user id
+"""
+from requests import get, auth
+import sys
+
 
 if __name__ == "__main__":
-    url = "https://api.github.com/user"
-    auth = (argv[1], argv[2])
-    response = requests.get(url, auth=auth)
-    try:
-        print(response.json().get("id"))
-    except ValueError:
-        print("Not a valid JSON")
+    url = 'https://api.github.com/user'
+    user = sys.argv[1]
+    password = sys.argv[2]
+    r = get(url, auth=auth.HTTPBasicAuth(user, password))
+    print(r.json().get('id'))
