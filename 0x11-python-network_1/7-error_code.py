@@ -1,11 +1,17 @@
 #!/usr/bin/python3
-""" Uses requests module. Prints error code"""
+"""
+Python script that sends a request to the URL and
+displays:
+- The body of the response if there are no errors
+- The error code when there is an HTTP error.
+"""
 import requests
-from sys import argv
+import sys
+
 
 if __name__ == "__main__":
-    response = requests.get(argv[1])
-    if response.status_code > 400:
-        print("Error code:", response.status_code)
+    r = requests.get(sys.argv[1])
+    if r.status_code >= 400:
+        print("Error code: {}".format(r.status_code))
     else:
-        print(response.text)
+        print(r.text)
